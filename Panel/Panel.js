@@ -15,7 +15,8 @@ window.addEventListener('load', listen);
 
 function getProjectData()
 {
-	return document.querySelector('.gb_jd').innerText;
+	console.log(ko.toJS(_controller.PageModel.Projects()[0]));
+	return "";
 }
 
 function updateUI() {
